@@ -10,7 +10,7 @@ on: #trigger on push & PR to this branch only
 
 env:
   JAVA_VERSION: "12.x" #change this version if you want
-  FLUTTER_VERSION: "2.2.3" #set here your version
+  FLUTTER_VERSION: "3.3.0" #set here your version
   FLUTTER_CHANNEL: "stable" #set here your channel
 
 jobs:
@@ -61,7 +61,6 @@ jobs:
         with:
           channel: ${{env.FLUTTER_CHANNEL}}
       - run: |
-          flutter upgrade
           flutter pub get
           flutter build web --release
           cd build/web
