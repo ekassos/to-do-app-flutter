@@ -6,6 +6,7 @@ extension PercentageSize on double{
   double get wp =>(Get.width*(this/100));
 }
 
+// Get hex representation of color
 extension HexColor on Color {
   static Color fromHex(String hexString) {
     final buffer = StringBuffer();

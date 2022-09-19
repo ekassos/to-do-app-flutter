@@ -1,5 +1,6 @@
 import 'package:flutter/rendering.dart';
 
+// Color definitions -- feel free to play around to create your favorite pallette
 const purple = Color(0xFF756BFC);
 const pink = Color(0xFFF1A39A);
 const deepPink = Color(0xFFFA63C6);

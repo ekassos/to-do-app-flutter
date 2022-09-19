@@ -1,3 +1,4 @@
+// Categories icons
 const personIcon=0xe491;
 const workIcon=0xe11c;
 const movieIcon=0xe40f;

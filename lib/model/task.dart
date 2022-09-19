@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 
+// Task data type
 class Task extends Equatable{
   final String title;
   final int icon;

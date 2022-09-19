@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:todo/app/core/extensions.dart';
 import 'package:todo/controller/homecontroller.dart';
 
+// View details of add item overlay (shown when the user clicks the plus icon in the navbar)
 class AddDialog extends StatelessWidget {
   AddDialog({Key? key}) : super(key: key);
   final control=Get.find<Homecontroller>();

@@ -9,6 +9,7 @@ import 'package:todo/app/screen/intro/intro.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
+// General preferences.
 SharedPreferences? preferences;
 main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,6 +19,7 @@ main() async {
   runApp(MyApp());
 }
 
+// App controller: sets theme, font, etc and calls views
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 

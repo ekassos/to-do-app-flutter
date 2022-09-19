@@ -1,3 +1,4 @@
+// Orientation content data type
 class IntroContent{
   String? imageName,title,description;
 

@@ -8,6 +8,7 @@ import 'package:todo/model/task.dart';
 class TaskProvider{
   final _store=Get.find<StoreService>();
 
+  // Read tasks from storage
   List<Task> readTasks(){
     var tasks =<Task>[];
     dynamic temp= jsonDecode(_store.read(TASKKEY).toString());
@@ -25,7 +26,7 @@ class TaskProvider{
     
     return tasks;
   }
-
+  // Write tasks to storage
   void writeTasks(List<Task> tasks){
     /*for(var e in tasks){
         _store.write(TASKKEY,jsonEncode(e.tojson(e)));

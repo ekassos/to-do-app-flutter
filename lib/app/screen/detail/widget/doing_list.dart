@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:todo/app/core/extensions.dart';
 import 'package:todo/controller/homecontroller.dart';
 
+// View details of category page upper half (when user clicks the category to add items)
 class DoingList extends StatelessWidget {
   DoingList({Key? key}) : super(key: key);
   final control=Get.find<Homecontroller>();
