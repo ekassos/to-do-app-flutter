@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:todo/app/core/colors.dart';
 import 'package:todo/app/core/icons.dart';
 
+// Icon match with colors
 List<Icon>getIcons() {
   return const[
     Icon(IconData(personIcon,fontFamily: 'MaterialIcons'),color: purple,),

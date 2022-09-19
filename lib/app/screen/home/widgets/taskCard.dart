@@ -8,6 +8,7 @@ import 'package:todo/main.dart';
 import 'package:todo/model/task.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
+// Category View
 class TaskCard extends StatelessWidget {
   TaskCard({Key? key, required this.task}) : super(key: key);
   final Homecontrol = Get.find<Homecontroller>();

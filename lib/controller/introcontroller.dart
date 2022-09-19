@@ -5,6 +5,7 @@ import 'package:todo/app/screen/home/widgets/demopagestate.dart';
 import 'package:todo/main.dart';
 import 'package:todo/model/introcontent.dart';
 
+// Functions for manipulating content in orientation view
 class IntroController extends GetxController {
   RxInt currentIndex = 0.obs;
   PageController pagecontroller = PageController();

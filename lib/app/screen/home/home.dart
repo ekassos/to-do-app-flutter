@@ -5,6 +5,7 @@ import 'package:todo/app/screen/home/widgets/addCard.dart';
 import 'package:todo/app/screen/home/widgets/taskCard.dart';
 import 'package:todo/controller/homecontroller.dart';
 
+// Category View
 class Home extends GetView<Homecontroller> {
   Home({Key? key}) : super(key: key);
   var control=Get.find<Homecontroller>();

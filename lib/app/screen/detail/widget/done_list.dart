@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:todo/app/core/extensions.dart';
 import 'package:todo/controller/homecontroller.dart';
 
+// View details of category page lower half (when user clicks the items to mark them as complete)  
 class DoneList extends StatelessWidget {
   DoneList({Key? key}) : super(key: key);
   final control=Get.find<Homecontroller>();

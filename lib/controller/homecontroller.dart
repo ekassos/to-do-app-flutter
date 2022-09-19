@@ -4,6 +4,7 @@ import 'package:get/state_manager.dart';
 import 'package:todo/app/data/services/storage/repository.dart';
 import 'package:todo/model/task.dart';
 
+// Functions for manipulating tasks in all pages/views after orientation
 class Homecontroller extends GetxController{
   TaskRepository taskRepository;
   Homecontroller({required this.taskRepository});

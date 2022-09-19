@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:todo/app/core/extensions.dart';
 import 'package:todo/controller/introcontroller.dart';
 
+// Orientation screens container
 class Intro extends StatelessWidget {
   Intro({Key? key}) : super(key: key);
   final introdata=IntroController();

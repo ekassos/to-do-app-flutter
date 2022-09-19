@@ -8,6 +8,7 @@ import 'package:todo/app/screen/report/report.dart';
 import 'package:todo/controller/homecontroller.dart';
 import 'package:todo/model/task.dart';
 
+// 
 class Demopagestate extends StatelessWidget {
   Demopagestate({Key? key}) : super(key: key);
   var control=Get.find<Homecontroller>();
@@ -24,16 +25,17 @@ class Demopagestate extends StatelessWidget {
               if(control.tasks.isNotEmpty){
                 Get.to(()=>AddDialog(),transition: Transition.downToUp);
               }else{
-                EasyLoading.showInfo("Please create your task type");
+                EasyLoading.showInfo("Please create your task category");
               }
             },
             child: Icon(control.deleting.value? Icons.delete:Icons.add,color: Colors.white,size: 30),
           ),
         );
         },
+        // In the category view, swipe left to delete a completed to-do item.
         onAccept: (Task task){
           control.deletetask(task);
-          EasyLoading.showSuccess("Delete Sucess");
+          EasyLoading.showSuccess("Successfully deleted task category");
         },
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

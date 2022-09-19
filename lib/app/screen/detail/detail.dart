@@ -7,6 +7,7 @@ import 'package:todo/app/screen/detail/widget/doing_list.dart';
 import 'package:todo/app/screen/detail/widget/done_list.dart';
 import 'package:todo/controller/homecontroller.dart';
 
+// View details of category page middle (when user uses the input box to add an item)
 class DetailPage extends StatelessWidget {
   DetailPage({Key? key}) : super(key: key);
   final control=Get.find<Homecontroller>();
@@ -89,7 +90,7 @@ class DetailPage extends StatelessWidget {
                             if(control.formkey.currentState!.validate()){
                               var success = control.addTodo(control.titlecontroller.text);
                               if(success)
-                              EasyLoading.showSuccess('Successfully added to-do item to $task.title');
+                              EasyLoading.showSuccess('Successfully added to-do item');
                               else
                               EasyLoading.showError('An item with the same name already exists');
     

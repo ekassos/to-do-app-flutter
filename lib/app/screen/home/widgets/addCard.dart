@@ -7,6 +7,7 @@ import 'package:todo/app/screen/home/icons.dart';
 import 'package:todo/controller/homecontroller.dart';
 import 'package:todo/model/task.dart';
 
+// View details of add category overlay (shown when the user clicks the plus icon in the categories page)
 class AddCard extends StatelessWidget {
   AddCard({Key? key}) : super(key: key);
   final homecontrol=Get.find<Homecontroller>();
